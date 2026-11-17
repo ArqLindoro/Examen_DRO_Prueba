@@ -135,7 +135,7 @@
             height: 150
         });
 
-        let tiempoRestante = 600; // 05 minutos en segundos
+        let tiempoRestante = 600; // 10 minutos en segundos
         let intervalo;
         let examenEnviado = false;
 
@@ -160,7 +160,7 @@
                     clearInterval(intervalo);
                     finalizarExamen(true);
                 }
-            }, 500);
+            }, 1000);
         }
 
         function obtenerValor(nombrePregunta) {
