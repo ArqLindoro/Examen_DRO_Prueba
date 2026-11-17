@@ -16,7 +16,7 @@
                 <h1 class="text-xl font-bold">Simulacro Oficial DRO y Corresponsable</h1>
             </div>
             <div id="timer-box" class="hidden bg-red-600 text-white px-4 py-2 rounded-lg font-mono text-xl font-bold shadow">
-                ⏱️ <span id="tiempo">5:00</span>
+                ⏱️ <span id="tiempo">05:00</span>
             </div>
         </div>
     </header>
@@ -38,7 +38,7 @@
             </div>
 
             <button onclick="comenzarExamen()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-lg transition shadow">
-                Iniciar Prueba (5:00 min)
+                Iniciar Prueba (05:00 min)
             </button>
 
             <!-- QR para proyectar en sala -->
@@ -135,7 +135,7 @@
             height: 150
         });
 
-        let tiempoRestante = 600; // 5 minutos en segundos
+        let tiempoRestante = 300; // 5 minutos en segundos (300s)
         let intervalo;
         let examenEnviado = false;
 
@@ -160,7 +160,7 @@
                     clearInterval(intervalo);
                     finalizarExamen(true);
                 }
-            }, 500);
+            }, 1000);
         }
 
         function obtenerValor(nombrePregunta) {
